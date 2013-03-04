@@ -1,4 +1,8 @@
 myvimrc
 =======
 
-my vim configuration
+# Used plugins
+
+* Pathogen
+* Surround
+* Repeat
