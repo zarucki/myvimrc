@@ -102,6 +102,11 @@ set softtabstop=4
 " always uses spaces instead of tab characters
 set expandtab
 
+set clipboard+=unnamed
+
+" Mark just pasted text
+nnoremap <expr> gp '`[' . getregtype()[0] . '`]'
+
 set diffexpr=MyDiff()
 function! MyDiff()
   let opt = '-a --binary '
