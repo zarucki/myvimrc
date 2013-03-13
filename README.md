@@ -6,3 +6,4 @@ myvimrc
 * Pathogen
 * Surround
 * Repeat
+* Snipmate
