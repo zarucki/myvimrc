@@ -7,3 +7,6 @@
 [submodule "vimfiles/bundle/snipmate"]
 	path = vimfiles/bundle/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
+[submodule "vimfiles/bundle/sqlserversyntax"]
+	path = vimfiles/bundle/sqlserversyntax
+	url = https://github.com/vim-scripts/sqlserver.vim.git
