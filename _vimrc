@@ -54,8 +54,9 @@ set hidden
 nnoremap ' `
 nnoremap ` '
 
-nnoremap \ll :!pdflatex %<CR>
-nnoremap \lv :!%:r.pdf<CR>
+
+nnoremap \ll :!start cmd "pdflatex %"<CR>
+nnoremap \lv :silent !%:r.pdf<CR>
 
 " No beeping
 set visualbell
