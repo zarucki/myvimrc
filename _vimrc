@@ -55,6 +55,7 @@ nnoremap ` '
 
 nnoremap \ll :!start cmd "pdflatex %"<CR>
 nnoremap \lv :silent !%:r.pdf<CR>
+nnoremap <tab> %
 
 " No beeping
 set visualbell
@@ -100,6 +101,27 @@ set shiftwidth=4
 set softtabstop=4
 " always uses spaces instead of tab characters
 set expandtab
+
+" Highlighting searches
+set incsearch
+set showmatch
+set hlsearch
+
+" Numbers of lines always visible above and below current line
+set scrolloff=3
+set autoindent
+
+set cursorline
+" Relative line numbers
+set relativenumber
+" Create undo files, so undo data is not lost when file is exited
+set undofile
+" Because it's local dummy, why should it behave like some remote terminal
+set ttyfast
+set laststatus=2
+
+set wildmenu
+set wildmode=list:longest
 
 set clipboard+=unnamed
 
