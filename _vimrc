@@ -7,9 +7,6 @@ behave mswin
 
 set background=dark 
 colorscheme ir_black
-" :colorscheme desert
-" :colorscheme zenburn
-" :colorscheme wombat
 set ignorecase
 set smartcase
 
@@ -45,6 +42,7 @@ set grepprg=grep\ -nH\ $*
 set guifont=Consolas:h14:cDEFAULT
 
 "set fencs=ucs-bom,utf-16le,utf-8,default,latin1
+"set fencs=ucs-bom,utf-16le,unicode,utf-8,default
 set fencs=ucs-bom,utf-8,default,latin1
 
 " So you can change buffers without saving
@@ -107,6 +105,11 @@ set clipboard+=unnamed
 
 " Mark just pasted text
 nnoremap <expr> gp '`[' . getregtype()[0] . '`]'
+
+" Enter working just as in insert in normal
+nnoremap <silent> <CR> i<CR><Esc>
+" Opposite of Shift-J
+nnoremap <C-J> a<CR><Esc>k$
 
 set diffexpr=MyDiff()
 function! MyDiff()
