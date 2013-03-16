@@ -157,3 +157,12 @@ function! MyDiff()
   endif
   silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
 endfunction
+
+if has("win32")
+    set shell=powershell
+    set shellcmdflag=-c
+    set shellquote=\"
+    set shellxquote=
+    set shellpipe=|
+    set shellredir=>
+endif 
