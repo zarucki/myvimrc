@@ -7,6 +7,7 @@ myvimrc
 * Surround
 * Repeat
 * Snipmate
+* NERDTree
 
 # Other stuff
 

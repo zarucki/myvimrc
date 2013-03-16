@@ -13,3 +13,6 @@
 [submodule "vimfiles/bundle/powershell-syntax"]
 	path = vimfiles/bundle/powershell-syntax
 	url = https://github.com/vim-scripts/Windows-PowerShell-Syntax-Plugin.git
+[submodule "vimfiles/bundle/nerdtree"]
+	path = vimfiles/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
