@@ -10,3 +10,6 @@
 [submodule "vimfiles/bundle/sqlserversyntax"]
 	path = vimfiles/bundle/sqlserversyntax
 	url = https://github.com/vim-scripts/sqlserver.vim.git
+[submodule "vimfiles/bundle/powershell-syntax"]
+	path = vimfiles/bundle/powershell-syntax
+	url = https://github.com/vim-scripts/Windows-PowerShell-Syntax-Plugin.git
