@@ -8,6 +8,7 @@ myvimrc
 * Repeat
 * Snipmate
 * NERDTree
+* dbext
 
 # Other stuff
 
