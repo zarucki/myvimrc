@@ -118,7 +118,7 @@ set relativenumber
 set undofile
 " Because it's local dummy, why should it behave like some remote terminal
 set ttyfast
-set laststatus=2
+set laststatus=1
 
 set wildmenu
 set wildmode=list:longest
