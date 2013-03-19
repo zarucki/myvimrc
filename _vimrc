@@ -1,11 +1,24 @@
 call pathogen#infect()
-" start maximized
-au GUIEnter * simalt ~x
 
 set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
-behave mswin
+
+" start maximized
+if has("gui_running")
+  " GUI is running or is about to start.
+  " Maximize gvim window.
+  set lines=999 columns=999
+else
+  " This is console Vim.
+  if exists("+lines")
+    set lines=50
+  endif
+  if exists("+columns")
+    set columns=100
+  endif
+endif
+
 
 set background=dark 
 colorscheme ir_black
@@ -161,6 +174,7 @@ function! MyDiff()
 endfunction
 
 if has("win32")
+    au GUIEnter * simalt ~x " x on an English Windows version. n on a French one
     set shell=powershell
     set shellcmdflag=-c
     set shellquote=\"
