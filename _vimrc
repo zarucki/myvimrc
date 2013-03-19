@@ -1,4 +1,6 @@
 call pathogen#infect()
+" start maximized
+au GUIEnter * simalt ~x
 
 set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
