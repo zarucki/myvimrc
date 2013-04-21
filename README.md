@@ -9,6 +9,8 @@ myvimrc
 * Snipmate
 * NERDTree
 * dbext
+* SQLUtilities
+* Align
 
 # Other stuff
 
