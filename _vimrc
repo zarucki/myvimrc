@@ -1,8 +1,8 @@
 call pathogen#infect()
 
 set nocompatible
-source $VIMRUNTIME/vimrc_example.vim
-source $VIMRUNTIME/mswin.vim
+"source $VIMRUNTIME/vimrc_example.vim
+"source $VIMRUNTIME/mswin.vim
 
 " start maximized
 if has("gui_running")
@@ -24,6 +24,8 @@ set background=dark
 colorscheme ir_black
 set ignorecase
 set smartcase
+set backspace=indent,eol,start
+
 
 " make tab inserts instead of tabs at the begining of a line:
 set smartindent
@@ -32,6 +34,7 @@ set smartindent
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
 filetype plugin on
 filetype indent on
+syntax enable
 
 " IMPORTANT: win32 users will need to have 'shellslash' set so that latex
 " can be called correctly.
@@ -117,6 +120,8 @@ set softtabstop=4
 " always uses spaces instead of tab characters
 set expandtab
 
+au FileType lua setl ts=2 sw=2 sts=2 et
+
 " Highlighting searches
 set incsearch
 set showmatch
@@ -129,8 +134,16 @@ set autoindent
 set cursorline
 " Relative line numbers
 set relativenumber
+
 " Create undo files, so undo data is not lost when file is exited
 set undofile
+" To not flood directories with vim files
+ set backupdir-=.
+ set undodir-=.
+ set undodir^=$TEMP\\undo
+ set backupdir^=$TEMP
+ set directory=$TEMP\\\\
+
 " Because it's local dummy, why should it behave like some remote terminal
 set ttyfast
 set laststatus=1
@@ -147,6 +160,10 @@ nnoremap <expr> gp '`[' . getregtype()[0] . '`]'
 nnoremap <silent> <CR> i<CR><Esc>
 " Opposite of Shift-J
 nnoremap <C-J> a<CR><Esc>k$
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 set diffexpr=MyDiff()
 function! MyDiff()
