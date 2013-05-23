@@ -219,3 +219,5 @@ if has("win32")
     set shellpipe=|
     set shellredir=>
 endif 
+
+let &scrolloff=999-&scrolloff

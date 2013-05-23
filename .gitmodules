@@ -28,9 +28,6 @@
 [submodule "vimfiles/bundle/Align"]
 	path = vimfiles/bundle/Align
 	url = https://github.com/vim-scripts/Align.git
-[submodule ".\\vimfiles\\bundle\\gundo"]
-	path = .\\vimfiles\\bundle\\gundo
-	url = http://github.com/sjl/gundo.vim.git
 [submodule ".\\vimfiles\\bundle\\vim-colors-solarized"]
 	path = .\\vimfiles\\bundle\\vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
