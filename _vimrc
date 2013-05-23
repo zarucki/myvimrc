@@ -3,6 +3,10 @@ call pathogen#infect()
 set nocompatible
 "source $VIMRUNTIME/vimrc_example.vim
 "source $VIMRUNTIME/mswin.vim
+if !has("python")
+    echo 'python NOT loaded'
+    finish
+endif
 
 " start maximized
 if has("gui_running")
@@ -20,8 +24,23 @@ else
 endif
 
 
-set background=dark 
-colorscheme ir_black
+"colorscheme github
+"set background=dark 
+"colorscheme ir_black
+"colorscheme zenburn
+"set background=light
+"colorscheme bandit
+
+" Solarized color scheme dark
+syntax enable
+set background=dark
+colorscheme solarized
+
+" Solarized color scheme light
+"syntax enable
+"set background=light
+"colorscheme solarized
+
 set ignorecase
 set smartcase
 set backspace=indent,eol,start
@@ -69,6 +88,7 @@ set hidden
 " Rempaaing ` to '
 nnoremap ' `
 nnoremap ` '
+nnoremap <F5> :GundoToggle<CR>
 
 
 nnoremap \ll :!start cmd "pdflatex %"<CR>
