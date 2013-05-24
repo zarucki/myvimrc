@@ -11,6 +11,7 @@ myvimrc
 * dbext
 * SQLUtilities
 * Align
+* Gundo.vim
 
 # Other stuff
 
