@@ -34,3 +34,6 @@
 [submodule "vimfiles/bundle/gundo.vim"]
 	path = vimfiles/bundle/gundo.vim
 	url = https://github.com/sjl/gundo.vim.git
+[submodule "vimfiles\\bundle\\ZoomWin"]
+	path = vimfiles\\bundle\\ZoomWin
+	url = https://github.com/otommod/ZoomWin.git

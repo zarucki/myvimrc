@@ -11,7 +11,8 @@ myvimrc
 * dbext
 * SQLUtilities
 * Align
-* Gundo.vim
+* Gundo.vim - easy browising through vim undo tree
+* ZoomWin - for easy focusing on one window, and restoring layout when finished with it
 
 # Other stuff
 
