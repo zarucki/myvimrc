@@ -3,10 +3,6 @@ call pathogen#infect()
 set nocompatible
 "source $VIMRUNTIME/vimrc_example.vim
 "source $VIMRUNTIME/mswin.vim
-if !has("python")
-    echo 'python NOT loaded'
-    finish
-endif
 
 " start maximized
 if has("gui_running")
@@ -221,3 +217,4 @@ if has("win32")
 endif 
 
 let &scrolloff=999-&scrolloff
+nnoremap <F5> :GundoToggle<CR>
