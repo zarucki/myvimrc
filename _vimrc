@@ -235,4 +235,12 @@ runtime macros/matchit.vim
 " Leader mappings
 nnoremap ,u :GundoToggle<CR>
 nmap <silent> ,n :silent :nohlsearch<CR>
+
+" CtrlP plugin
+let g:ctrlp_working_path_mode = 'ra'
 nmap ,b :CtrlPBuffer<CR>
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ }
