@@ -3,10 +3,6 @@ call pathogen#infect()
 set nocompatible
 "source $VIMRUNTIME/vimrc_example.vim
 "source $VIMRUNTIME/mswin.vim
-if !has("python")
-    echo 'python NOT loaded'
-    finish
-endif
 
 " start maximized
 if has("gui_running")
