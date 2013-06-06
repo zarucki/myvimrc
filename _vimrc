@@ -235,3 +235,4 @@ runtime macros/matchit.vim
 " Leader mappings
 nnoremap ,u :GundoToggle<CR>
 nmap <silent> ,n :silent :nohlsearch<CR>
+nmap ,b :CtrlPBuffer<CR>
