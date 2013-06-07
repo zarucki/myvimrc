@@ -13,6 +13,7 @@ myvimrc
 * Align
 * Gundo.vim - easy browising through vim undo tree
 * ZoomWin - for easy focusing on one window, and restoring layout when finished with it
+* CtrlP - buffer and file searching
 
 # Other stuff
 

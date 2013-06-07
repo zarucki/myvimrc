@@ -47,6 +47,8 @@ set smartindent
 
 """""""""""" Added for vim-tex """"""""""""""""
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
+syntax on
+filetype on
 filetype plugin on
 filetype indent on
 syntax enable
@@ -92,6 +94,11 @@ nmap ,p o<ESC>p
 nnoremap \ll :!start cmd "pdflatex %"<CR>
 nnoremap \lv :silent !%:r.pdf<CR>
 nnoremap <tab> %
+
+" Shortcuts
+" Change Working Directory to that of the current file
+cmap cwd lcd %:p:h
+cmap cd. lcd %:p:h
 
 " No beeping
 set visualbell
@@ -144,6 +151,7 @@ au FileType lua setl ts=2 sw=2 sts=2 et
 set incsearch
 set showmatch
 set hlsearch
+set history=1000
 
 " Numbers of lines always visible above and below current line
 set scrolloff=3
@@ -173,11 +181,13 @@ set clipboard+=unnamed
 
 " Mark just pasted text
 nnoremap <expr> gp '`[' . getregtype()[0] . '`]'
+nmap Y y$
 
 " Enter working just as in insert in normal
 nnoremap <silent> <CR> i<CR><Esc>
 " Opposite of Shift-J
 nnoremap <C-J> a<CR><Esc>k$
+
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
@@ -219,4 +229,20 @@ if has("win32")
 endif 
 
 let &scrolloff=999-&scrolloff
-nnoremap <F5> :GundoToggle<CR>
+
+nnoremap <C-e> 3<C-e>
+nnoremap <C-y> 3<C-y>
+runtime macros/matchit.vim
+
+" Leader mappings
+nnoremap ,u :GundoToggle<CR>
+nmap <silent> ,n :silent :nohlsearch<CR>
+
+" CtrlP plugin
+let g:ctrlp_working_path_mode = 'ra'
+nmap ,b :CtrlPBuffer<CR>
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ }
