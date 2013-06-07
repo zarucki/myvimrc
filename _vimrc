@@ -85,7 +85,9 @@ set hidden
 nnoremap ' `
 nnoremap ` '
 nnoremap <F5> :GundoToggle<CR>
-
+inoremap <C-F> <C-R>"
+nmap Y y$
+nmap ,p o<ESC>p
 
 nnoremap \ll :!start cmd "pdflatex %"<CR>
 nnoremap \lv :silent !%:r.pdf<CR>
