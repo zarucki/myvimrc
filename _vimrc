@@ -19,6 +19,7 @@ else
   endif
 endif
 
+set shortmess+=filmnrxoOtT
 
 "colorscheme github
 "set background=dark 
