@@ -75,7 +75,7 @@ set grepprg=grep\ -nH\ $*
 
 
 " Font
-set guifont=Consolas:h14:cDEFAULT
+set guifont=Consolas:h15:cDEFAULT
 
 "set fencs=ucs-bom,utf-16le,utf-8,default,latin1
 "set fencs=ucs-bom,utf-16le,unicode,utf-8,default
@@ -87,7 +87,6 @@ set hidden
 " Rempaaing ` to '
 nnoremap ' `
 nnoremap ` '
-nnoremap <F5> :GundoToggle<CR>
 inoremap <C-F> <C-R>"
 nmap Y y$
 nmap ,p o<ESC>p
