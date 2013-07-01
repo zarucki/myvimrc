@@ -228,7 +228,8 @@ if has("win32")
     set shellredir=>
 endif 
 
-let &scrolloff=999-&scrolloff
+" Always centered
+" let &scrolloff=999-&scrolloff
 
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
