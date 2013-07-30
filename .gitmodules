@@ -43,8 +43,8 @@
 [submodule "vimfiles/bundle/tcomment"]
 	path = vimfiles/bundle/tcomment
 	url = https://github.com/tomtom/tcomment_vim.git
-[submodule "vimfiles\\bundle\\vim-csharp"]
-	path = vimfiles\\bundle\\vim-csharp
+[submodule "vimfiles/bundle/vim-csharp"]
+	path = vimfiles/bundle/vim-csharp
 	url = https://github.com/OrangeT/vim-csharp.git
 [submodule "vimfiles/bundle/vim-markdown"]
 	path = vimfiles/bundle/vim-markdown
