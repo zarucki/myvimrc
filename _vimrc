@@ -9,6 +9,7 @@ if has("gui_running")
   " GUI is running or is about to start.
   " Maximize gvim window.
   set lines=999 columns=999
+  set guioptions-=mT
 else
   " This is console Vim.
   if exists("+lines")
@@ -18,6 +19,7 @@ else
     set columns=100
   endif
 endif
+
 
 "colorscheme github
 "set background=dark 
@@ -227,6 +229,12 @@ if has("win32")
     set shellredir=>
 endif 
 
+"Invisible character colors
+highlight NonText guifg=#4a4a59
+highlight SpecialKey guifg=#4a4a59
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
+
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 runtime macros/matchit.vim
@@ -234,6 +242,8 @@ runtime macros/matchit.vim
 " Leader mappings
 nnoremap ,u :GundoToggle<CR>
 nmap <silent> ,n :silent :nohlsearch<CR>
+" Shortcut to rapidly toggle `set list`
+nmap ,l :set list!<CR>
 
 " CtrlP plugin
 let g:ctrlp_working_path_mode = 'ra'
