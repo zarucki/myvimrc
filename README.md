@@ -15,6 +15,7 @@ myvimrc
 * ZoomWin - for easy focusing on one window, and restoring layout when finished with it
 * CtrlP - buffer and file searching
 * tComment
+* vim-unimpaired
 
 # Other stuff
 
