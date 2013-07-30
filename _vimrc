@@ -19,8 +19,6 @@ else
   endif
 endif
 
-set shortmess+=filmnrxoOtT
-
 "colorscheme github
 "set background=dark 
 "colorscheme ir_black
@@ -88,6 +86,7 @@ set hidden
 nnoremap ' `
 nnoremap ` '
 inoremap <C-F> <C-R>"
+nnoremap <C-tab> :b #<CR>
 nmap Y y$
 nmap ,p o<ESC>p
 
@@ -154,7 +153,7 @@ set hlsearch
 set history=1000
 
 " Numbers of lines always visible above and below current line
-set scrolloff=3
+set scrolloff=6
 set autoindent
 
 set cursorline
@@ -227,8 +226,6 @@ if has("win32")
     set shellpipe=|
     set shellredir=>
 endif 
-
-let &scrolloff=999-&scrolloff
 
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
