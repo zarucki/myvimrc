@@ -15,9 +15,12 @@ myvimrc
 * ZoomWin - for easy focusing on one window, and restoring layout when finished with it
 * CtrlP - buffer and file searching
 * tComment
+* vim-unimpaired
 
 # Other stuff
 
 * sql server syntax highlighting
 * powershell syntax highlighting, indenting and detection
+* c# syntax highlighting
+* markdown syntax highlighting, folding
 * Visual selection searching by * and # from [vim wika](http://vim.wikia.com/wiki/VimTip171)
