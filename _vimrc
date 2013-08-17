@@ -41,6 +41,15 @@ colorscheme solarized
 set ignorecase
 set smartcase
 set backspace=indent,eol,start
+" to not break in the middle of the word
+set linebreak
+" to indicate that the line is not a new line but continuation of the previous one
+set showbreak=…
+" to show partial line even if they don't fit on screen
+set display+=lastline
+" so jkhl acts on logical lines
+map j gj
+map k gk
 
 
 " make tab inserts instead of tabs at the begining of a line:
@@ -75,7 +84,7 @@ set grepprg=grep\ -nH\ $*
 
 
 " Font
-set guifont=Consolas:h16:cDEFAULT
+set guifont=Consolas:h18:cDEFAULT
 
 "set fencs=ucs-bom,utf-16le,utf-8,default,latin1
 "set fencs=ucs-bom,utf-16le,unicode,utf-8,default
@@ -165,11 +174,11 @@ set relativenumber
 " Create undo files, so undo data is not lost when file is exited
 set undofile
 " To not flood directories with vim files
- set backupdir-=.
- set undodir-=.
- set undodir^=$TEMP\\undo
- set backupdir^=$TEMP
- set directory=$TEMP\\\\
+set backupdir-=.
+set undodir-=.
+set undodir^=$TEMP\\undo
+set backupdir^=$TEMP
+set directory=$TEMP\\\\
 
 " Because it's local dummy, why should it behave like some remote terminal
 set ttyfast
