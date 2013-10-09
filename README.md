@@ -16,6 +16,7 @@ myvimrc
 * CtrlP - buffer and file searching
 * tComment
 * vim-unimpaired
+* Syntastic
 
 # Other stuff
 
