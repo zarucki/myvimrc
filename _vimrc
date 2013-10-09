@@ -194,7 +194,7 @@ nnoremap <expr> gp '`[' . getregtype()[0] . '`]'
 nmap Y y$
 
 " Enter working just as in insert in normal
-nnoremap <silent> <CR> i<CR><Esc>
+nnoremap <Leader><CR> i<CR><Esc>
 " Opposite of Shift-J
 nnoremap <C-J> a<CR><Esc>k$
 
@@ -265,3 +265,8 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
   \ 'file': '\v\.(exe|so|dll)$',
   \ }
+
+" For syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
