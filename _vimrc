@@ -200,7 +200,6 @@ nmap Y y$
 " Enter working just as in insert in normal
 nnoremap ,<CR> a<CR><Esc>
 nnoremap ,<S-CR> i<CR><Esc>
-
 " Opposite of Shift-J
 nnoremap <C-J> a<CR><Esc>k$
 
@@ -278,3 +277,8 @@ let g:dbext_default_SQLSRV_cmd_options = '-w 10000 -b -n'
 
 nmap <F3> a<C-R>=strftime("%Y-%m-%d %a %H:%M:%S")<CR><Esc>
 imap <F3> <C-R>=strftime("%Y-%m-%d %a %H:%M:%S")<CR>
+
+" For syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
