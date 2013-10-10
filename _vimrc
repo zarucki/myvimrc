@@ -40,7 +40,10 @@ colorscheme solarized
 "colorscheme solarized
 
 set ignorecase
-set smartcase
+if exists("&wildignorecase")
+    set wildignorecase
+endif
+" set smartcase
 set backspace=indent,eol,start
 " to not break in the middle of the word
 set linebreak
@@ -85,7 +88,7 @@ set grepprg=grep\ -nH\ $*
 
 
 " Font
-set guifont=Consolas:h18:cDEFAULT
+set guifont=Consolas:h16:cDEFAULT
 
 "set fencs=ucs-bom,utf-16le,utf-8,default,latin1
 "set fencs=ucs-bom,utf-16le,unicode,utf-8,default
@@ -195,7 +198,9 @@ nnoremap <expr> gp '`[' . getregtype()[0] . '`]'
 nmap Y y$
 
 " Enter working just as in insert in normal
-nnoremap <silent> <CR> i<CR><Esc>
+nnoremap ,<CR> a<CR><Esc>
+nnoremap ,<S-CR> i<CR><Esc>
+
 " Opposite of Shift-J
 nnoremap <C-J> a<CR><Esc>k$
 
@@ -255,8 +260,6 @@ runtime macros/matchit.vim
 " Leader mappings
 nnoremap ,u :GundoToggle<CR>
 nmap <silent> ,n :silent :nohlsearch<CR>
-" Shortcut to rapidly toggle `set list`
-nmap ,l :set list!<CR>
 
 " CtrlP plugin
 let g:ctrlp_working_path_mode = 'ra'
@@ -266,3 +269,12 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
   \ 'file': '\v\.(exe|so|dll)$',
   \ }
+
+" dbext
+let g:dbext_default_profile_mySQLServer = 'type=SQLSRV:integratedlogin=1:host=localhost'
+let g:dbext_default_profile = 'mySQLServer'
+let g:dbext_default_SQLSRV_cmd_options = '-w 10000 -b -n'
+"let g:ftplugin_sql_omni_key = '<C-S>'
+
+nmap <F3> a<C-R>=strftime("%Y-%m-%d %a %H:%M:%S")<CR><Esc>
+imap <F3> <C-R>=strftime("%Y-%m-%d %a %H:%M:%S")<CR>
