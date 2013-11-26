@@ -17,6 +17,7 @@ myvimrc
 * tComment
 * vim-unimpaired
 * Syntastic
+* Fugitive.vim
 
 # Other stuff
 
