@@ -272,7 +272,7 @@ let g:ctrlp_custom_ignore = {
 " dbext
 let g:dbext_default_profile_mySQLServer = 'type=SQLSRV:integratedlogin=1:host=localhost'
 let g:dbext_default_profile = 'mySQLServer'
-let g:dbext_default_SQLSRV_cmd_options = '-w 10000 -b -n'
+let g:dbext_default_SQLSRV_cmd_options = '-w 10000 -b -n -O'
 "let g:ftplugin_sql_omni_key = '<C-S>'
 
 nmap <F3> a<C-R>=strftime("%Y-%m-%d %a %H:%M:%S")<CR><Esc>
