@@ -105,6 +105,9 @@ nnoremap <C-tab> :b #<CR>
 nmap Y y$
 nmap ,p o<ESC>p
 
+nnoremap R "_d
+vnoremap R "_d
+
 nnoremap \ll :!start cmd "pdflatex %"<CR>
 nnoremap \lv :silent !%:r.pdf<CR>
 nnoremap <tab> %
