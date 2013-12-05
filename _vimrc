@@ -168,7 +168,7 @@ set hlsearch
 set history=1000
 
 " Numbers of lines always visible above and below current line
-set scrolloff=6
+set scrolloff=2
 set autoindent
 
 set cursorline
@@ -180,9 +180,9 @@ set undofile
 " To not flood directories with vim files
 set backupdir-=.
 set undodir-=.
-set undodir^=$TEMP\\undo
+set undodir^=$TEMP
 set backupdir^=$TEMP
-set directory=$TEMP\\\\
+set directory=$TEMP
 
 " Because it's local dummy, why should it behave like some remote terminal
 set ttyfast
