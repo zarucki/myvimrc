@@ -18,6 +18,7 @@ myvimrc
 * vim-unimpaired
 * Syntastic
 * Fugitive.vim
+* vifm vim files
 
 # Other stuff
 
