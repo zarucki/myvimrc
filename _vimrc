@@ -21,7 +21,6 @@ else
   endif
 endif
 
-
 "colorscheme github
 "set background=dark 
 "colorscheme ir_black
@@ -31,8 +30,11 @@ endif
 
 " Solarized color scheme dark
 syntax enable
-set background=dark
-colorscheme solarized
+
+if has("gui_running")
+    set background=dark
+    colorscheme solarized
+endif
 
 " Solarized color scheme light
 "syntax enable
@@ -205,6 +207,8 @@ nnoremap ,<CR> a<CR><Esc>
 nnoremap ,<S-CR> i<CR><Esc>
 " Opposite of Shift-J
 nnoremap <C-J> a<CR><Esc>k$
+" Horizontaly center on cursor
+nnoremap z<Bslash> zszH
 
 map <C-h> <C-w>h
 map <C-j> <C-w>j
