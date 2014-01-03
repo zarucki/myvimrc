@@ -263,7 +263,6 @@ nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 runtime macros/matchit.vim
 
-" Leader mappings
 nnoremap ,u :GundoToggle<CR>
 nmap <silent> ,n :silent :nohlsearch<CR>
 
@@ -289,3 +288,6 @@ imap <F3> <C-R>=strftime("%Y-%m-%d %a %H:%M:%S")<CR>
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
+" For making fanfingtastic ignore the case of f and t movements
+let g:fanfingtastic_ignorecase = 1

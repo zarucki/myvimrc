@@ -19,6 +19,7 @@ myvimrc
 * Syntastic
 * Fugitive.vim
 * vifm vim files
+* FanfingTastic - for case insensitive f and t movements
 
 # Other stuff
 
