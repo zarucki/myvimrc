@@ -289,6 +289,9 @@ imap <F3> <C-R>=strftime("%Y-%m-%d %a %H:%M:%S")<CR>
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+let g:syntastic_mode_map = { 'mode': 'passive',
+                           \ 'active_filetypes': [],
+                           \ 'passive_filetypes': [] }
 
 " For making fanfingtastic ignore the case of f and t movements
 let g:fanfingtastic_ignorecase = 1
