@@ -36,7 +36,7 @@
 	url = https://github.com/sjl/gundo.vim.git
 [submodule "vimfiles/bundle/ZoomWin"]
 	path = vimfiles/bundle/ZoomWin
-	url = https://github.com/otommod/ZoomWin.git
+	url = https://github.com/dr-chip-vim-scripts/ZoomWin.git
 [submodule "vimfiles/bundle/ctrlp"]
 	path = vimfiles/bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
@@ -61,3 +61,6 @@
 [submodule "vimfiles/bundle/fanfingtastic"]
 	path = vimfiles/bundle/fanfingtastic
 	url = https://github.com/dahu/vim-fanfingtastic.git
+[submodule "vimfiles/bundle/LargeFile"]
+	path = vimfiles/bundle/LargeFile
+	url = https://github.com/vim-scripts/LargeFile.git
