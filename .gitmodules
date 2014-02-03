@@ -64,3 +64,6 @@
 [submodule "vimfiles/bundle/LargeFile"]
 	path = vimfiles/bundle/LargeFile
 	url = https://github.com/vim-scripts/LargeFile.git
+[submodule "vimfiles/bundle/vim-indexed-search"]
+	path = vimfiles/bundle/vim-indexed-search
+	url = https://github.com/henrik/vim-indexed-search.git

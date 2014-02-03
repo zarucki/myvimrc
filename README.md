@@ -20,6 +20,7 @@ myvimrc
 * Fugitive.vim
 * vifm vim files
 * FanfingTastic - for case insensitive f and t movements
+* [vim-indexed-search](https://github.com/henrik/vim-indexed-search) - for reporting the number of matches when searching
 
 # Other stuff
 

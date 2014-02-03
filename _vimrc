@@ -105,6 +105,7 @@ nnoremap ` '
 inoremap <C-F> <C-R>"
 nnoremap <C-tab> :b #<CR>
 nmap Y y$
+
 nmap ,p o<ESC>p
 
 nnoremap R "_d
