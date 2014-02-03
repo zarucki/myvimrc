@@ -194,7 +194,7 @@ set ttyfast
 set laststatus=1
 
 set wildmenu
-set wildmode=list:longest
+set wildmode=list:full
 
 set clipboard+=unnamed
 
