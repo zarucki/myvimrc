@@ -4,23 +4,23 @@ myvimrc
 # Used plugins
 
 * Pathogen
-* Surround
-* Repeat
-* Snipmate
-* NERDTree
-* dbext
-* SQLUtilities
-* Align
-* Gundo.vim - easy browising through vim undo tree
-* ZoomWin - for easy focusing on one window, and restoring layout when finished with it
-* CtrlP - buffer and file searching
-* tComment
-* vim-unimpaired
-* Syntastic
-* Fugitive.vim
-* vifm vim files
-* FanfingTastic - for case insensitive f and t movements
+* [Surround](https://github.com/tpope/vim-surround.git)
+* [Repeat](https://github.com/tpope/vim-repeat.git)
+* [Snipmate](https://github.com/msanders/snipmate.vim.git)
+* [NERDTree](https://github.com/scrooloose/nerdtree.git)
+* [dbext](https://github.com/vim-scripts/dbext.vim.git)
+* [SQLUtilities](https://github.com/jphustman/SQLUtilities.git)
+* [Align](https://github.com/vim-scripts/Align.git)
+* [Gundo.vim](https://github.com/sjl/gundo.vim.git) - easy browising through vim undo tree
+* [ZoomWin](https://github.com/dr-chip-vim-scripts/ZoomWin.git) - for easy focusing on one window, and restoring layout when finished with it
+* [CtrlP](https://github.com/kien/ctrlp.vim.git) - buffer and file searching
+* [tComment](https://github.com/tomtom/tcomment_vim.git)
+* [vim-unimpaired](https://github.com/tpope/vim-unimpaired.git)
+* [Syntastic](https://github.com/scrooloose/syntastic.git)
+* [FanfingTastic](https://github.com/dahu/vim-fanfingtastic.git) - for case insensitive f and t movements
 * [vim-indexed-search](https://github.com/henrik/vim-indexed-search) - for reporting the number of matches when searching
+* [Fugitive.vim](https://github.com/tpope/vim-fugitive.git)
+* vifm vim files
 
 # Other stuff
 
@@ -28,4 +28,4 @@ myvimrc
 * powershell syntax highlighting, indenting and detection
 * c# syntax highlighting
 * markdown syntax highlighting, folding
-* Visual selection searching by * and # from [vim wika](http://vim.wikia.com/wiki/VimTip171)
+* Visual selection searching by * and # from [vim wikia](http://vim.wikia.com/wiki/VimTip171)

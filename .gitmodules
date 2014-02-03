@@ -19,9 +19,6 @@
 [submodule "vimfiles/bundle/dbtext"]
 	path = vimfiles/bundle/dbtext
 	url = https://github.com/vim-scripts/dbext.vim.git
-[submodule "vimfiles/bundles/SQLUtilities"]
-	path = vimfiles/bundles/SQLUtilities
-	url = https://github.com/jphustman/SQLUtilities.git
 [submodule "vimfiles/bundle/SQLUtilities"]
 	path = vimfiles/bundle/SQLUtilities
 	url = https://github.com/jphustman/SQLUtilities.git
