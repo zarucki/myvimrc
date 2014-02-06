@@ -262,6 +262,11 @@ set listchars=tab:▸\ ,eol:¬
 
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
+
+" So c-p and c-n also filters the history
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
+
 runtime macros/matchit.vim
 
 nnoremap ,u :GundoToggle<CR>
