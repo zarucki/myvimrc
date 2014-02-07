@@ -6,7 +6,6 @@ myvimrc
 * Pathogen
 * [Surround](https://github.com/tpope/vim-surround.git)
 * [Repeat](https://github.com/tpope/vim-repeat.git)
-* [Snipmate](https://github.com/msanders/snipmate.vim.git)
 * [NERDTree](https://github.com/scrooloose/nerdtree.git)
 * [dbext](https://github.com/vim-scripts/dbext.vim.git)
 * [SQLUtilities](https://github.com/jphustman/SQLUtilities.git)
@@ -20,6 +19,8 @@ myvimrc
 * [FanfingTastic](https://github.com/dahu/vim-fanfingtastic.git) - for case insensitive f and t movements
 * [vim-indexed-search](https://github.com/henrik/vim-indexed-search) - for reporting the number of matches when searching
 * [Fugitive.vim](https://github.com/tpope/vim-fugitive.git)
+* [UltiSnip](https://github.com/sirver/UltiSnips) - for snippets
+* [SuperTab](https://github.com/ervandew/supertab) - for easier autocompletion
 * vifm vim files
 
 # Other stuff
