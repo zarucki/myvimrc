@@ -4,9 +4,6 @@
 [submodule "vimfiles/bundle/vim-surround"]
 	path = vimfiles/bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
-[submodule "vimfiles/bundle/snipmate"]
-	path = vimfiles/bundle/snipmate
-	url = git://github.com/msanders/snipmate.vim.git
 [submodule "vimfiles/bundle/sqlserversyntax"]
 	path = vimfiles/bundle/sqlserversyntax
 	url = https://github.com/vim-scripts/sqlserver.vim.git
@@ -64,3 +61,9 @@
 [submodule "vimfiles/bundle/vim-indexed-search"]
 	path = vimfiles/bundle/vim-indexed-search
 	url = https://github.com/henrik/vim-indexed-search.git
+[submodule "vimfiles/bundle/ultisnips"]
+	path = vimfiles/bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+[submodule "vimfiles/bundle/supertab"]
+	path = vimfiles/bundle/supertab
+	url = https://github.com/ervandew/supertab.git

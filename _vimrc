@@ -113,7 +113,6 @@ vnoremap R "_d
 
 nnoremap \ll :!start cmd "pdflatex %"<CR>
 nnoremap \lv :silent !%:r.pdf<CR>
-nnoremap <tab> %
 
 " Shortcuts
 " Change Working Directory to that of the current file
@@ -206,8 +205,6 @@ nmap Y y$
 " Enter working just as in insert in normal
 nnoremap ,<CR> a<CR><Esc>
 nnoremap ,<S-CR> i<CR><Esc>
-" Opposite of Shift-J
-nnoremap <C-J> a<CR><Esc>k$
 " Horizontaly center on cursor
 nnoremap z<Bslash> zszH
 
@@ -300,3 +297,8 @@ let g:syntastic_mode_map = { 'mode': 'passive',
 
 " For making fanfingtastic ignore the case of f and t movements
 let g:fanfingtastic_ignorecase = 1
+
+" snipmate
+let g:UltiSnipsExpandTrigger="<C-Space>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
