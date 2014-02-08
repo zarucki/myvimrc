@@ -67,6 +67,7 @@ syntax on
 filetype on
 filetype plugin on
 filetype indent on
+set omnifunc=syntaxcomplete#Complete
 syntax enable
 
 " IMPORTANT: win32 users will need to have 'shellslash' set so that latex
@@ -299,6 +300,11 @@ let g:syntastic_mode_map = { 'mode': 'passive',
 let g:fanfingtastic_ignorecase = 1
 
 " snipmate
-let g:UltiSnipsExpandTrigger="<C-Space>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+" let g:UltiSnipsExpandTrigger="<C-Space>"
+" let g:UltiSnipsJumpForwardTrigger="<tab>"
+" let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+" supertab
+set completeopt=menu,menuone,preview,longest
+let g:SuperTabDefaultCompletionType="context"
+let g:SuperTabLongestEnhanced=1
