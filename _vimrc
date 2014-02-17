@@ -282,7 +282,7 @@ let g:ctrlp_custom_ignore = {
 " dbext
 let g:dbext_default_profile_mySQLServer = 'type=SQLSRV:integratedlogin=1:host=localhost'
 let g:dbext_default_profile = 'mySQLServer'
-let g:dbext_default_SQLSRV_cmd_options = '-w 65536 -b -n -m-1 -s ! -u'
+let g:dbext_default_SQLSRV_cmd_options = '-w 65536 -b -n -m-1 -s !'
 "let g:ftplugin_sql_omni_key = '<C-S>'
 
 nmap <F3> a<C-R>=strftime("%Y-%m-%d %a %H:%M:%S")<CR><Esc>
@@ -303,6 +303,9 @@ let g:fanfingtastic_ignorecase = 1
 " let g:UltiSnipsExpandTrigger="<C-Space>"
 " let g:UltiSnipsJumpForwardTrigger="<tab>"
 " let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsSnippetsDir=$VIM . '\vimfiles\snippets'
+let g:UltiSnipsEditSplit='horizontal'
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippets"]
 
 " supertab
 set completeopt=menu,menuone,preview,longest

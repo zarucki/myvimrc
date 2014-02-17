@@ -1,0 +1,92 @@
+snippet count
+SELECT COUNT(*) FROM $0
+GO
+endsnippet
+
+snippet select
+SELECT * FROM $0
+GO
+endsnippet
+
+snippet selectt
+SELECT top(${1:20}) * FROM ${2:table_name} ORDER BY 1 DESC $0
+GO
+endsnippet
+
+snippet tablee "OBJECT_ID - If table exists"
+IF OBJECT_ID('${1:table_name}', 'U') IS NOT NULL
+BEGIN
+	$0
+END
+GO
+endsnippet
+
+snippet tablee "INFORMATION_SCHEMA - If table exists"
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = '${1:dbo}' AND TABLE_NAME = '${2:table_name}')
+BEGIN
+	$0
+END
+GO
+endsnippet
+
+snippet tableec "COL_LENGTH - If column exists in table"
+IF COL_LENGTH('${1:table_name}', '${2:column_name}') IS NOT NULL
+BEGIN
+	$0
+END
+endsnippet
+
+snippet tableec "sys.columns and OBJECT_ID - If column exists in table"
+IF EXISTS(SELECT * FROM sys.columns WHERE [name] = N'${1:column_name}' AND [object_id] = OBJECT_ID(N'${2:table_name}'))
+BEGIN
+	$0
+END
+endsnippet
+
+snippet tableec "INFORMATION_SCHEMA - If column exists in table"
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '${1:table_name}' AND COLUMN_NAME = '${2:column_name}')
+BEGIN
+	$0
+END
+GO
+endsnippet
+
+snippet tablene "OBJECT_ID - If table not exists"
+IF OBJECT_ID('${1:table_name}', 'U') IS NULL
+BEGIN
+	$0
+END
+GO
+endsnippet
+
+snippet tablene "INFORMATION_SCHEMA - If table not exists"
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = '${1:dbo}' AND TABLE_NAME = '${2:table_name}')
+BEGIN
+	$0
+END
+GO
+endsnippet
+
+snippet tablec "Create table with key"
+CREATE TABLE [dbo].[${1:table_name}] (
+	[${2:Id}] int IDENTITY(1,1) NOT NULL,
+	$0
+	CONSTRAINT [PK_$1] PRIMARY KEY CLUSTERED ([$2])
+)
+endsnippet
+
+snippet tableac "Alter table add column"
+ALTER TABLE [dbo].[${1:table_name}] ADD [${2:column_name}] ${3:[INT]} ${4:NOT NULL DEFAULT(0)}
+$0
+endsnippet
+
+snippet update
+update [dbo].[${1:table_name}]
+SET
+	[${2:column_name}] = ${3:value}
+${4:WHERE } $0
+endsnippet
+
+snippet var
+declare @${1:var_name} ${2:varchar(max)}
+endsnippet
