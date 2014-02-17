@@ -91,7 +91,8 @@ set grepprg=grep\ -nH\ $*
 
 
 " Font
-set guifont=Consolas:h16:cDEFAULT
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h13:cDEFAULT
+
 
 "set fencs=ucs-bom,utf-16le,utf-8,default,latin1
 "set fencs=ucs-bom,utf-16le,unicode,utf-8,default
@@ -311,3 +312,8 @@ let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippets"]
 set completeopt=menu,menuone,preview,longest
 let g:SuperTabDefaultCompletionType="context"
 let g:SuperTabLongestEnhanced=1
+
+set laststatus=2
+let g:airline_powerline_fonts = 1
+" because fugitive is not working -_-
+let g:airline_section_b = ''
