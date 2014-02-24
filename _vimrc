@@ -212,7 +212,7 @@ endif
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 " Use the same symbols as TextMate for tabstops and EOLs
-set listchars=tab:▸\ ,eol:¬
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
