@@ -7,7 +7,7 @@ myvimrc
 * [Surround](https://github.com/tpope/vim-surround.git)
 * [Repeat](https://github.com/tpope/vim-repeat.git)
 * [NERDTree](https://github.com/scrooloose/nerdtree.git)
-* [dbext](https://github.com/vim-scripts/dbext.vim.git)
+* [dbext](https://github.com/jphustman/dbext.vim)
 * [SQLUtilities](https://github.com/jphustman/SQLUtilities.git)
 * [Align](https://github.com/vim-scripts/Align.git)
 * [Gundo.vim](https://github.com/sjl/gundo.vim.git) - easy browising through vim undo tree
