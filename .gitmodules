@@ -76,3 +76,6 @@
 [submodule "vimfiles/bundle/vim-exchange"]
 	path = vimfiles/bundle/vim-exchange
 	url = https://github.com/tommcdo/vim-exchange.git
+[submodule "vimfiles/bundle/vim-easymotion"]
+	path = vimfiles/bundle/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
