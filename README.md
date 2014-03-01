@@ -16,7 +16,6 @@ myvimrc
 * [tComment](https://github.com/tomtom/tcomment_vim.git)
 * [vim-unimpaired](https://github.com/tpope/vim-unimpaired.git)
 * [Syntastic](https://github.com/scrooloose/syntastic.git)
-* [FanfingTastic](https://github.com/dahu/vim-fanfingtastic.git) - for case insensitive f and t movements
 * [vim-indexed-search](https://github.com/henrik/vim-indexed-search) - for reporting the number of matches when searching
 * [Fugitive.vim](https://github.com/tpope/vim-fugitive.git)
 * [UltiSnip](https://github.com/sirver/UltiSnips) - for snippets
