@@ -23,6 +23,7 @@ myvimrc
 * [SuperTab](https://github.com/ervandew/supertab) - for easier autocompletion
 * [Airline](https://github.com/bling/vim-airline) - fancy status line
 * [Bufkill](https://github.com/blueyed/bufkill.vim) - Deleting buffers without closing window
+* [Vim-Exchange](https://github.com/tommcdo/vim-exchange) - Operator to exchange 2 texts
 * vifm vim files
 
 # Other stuff
