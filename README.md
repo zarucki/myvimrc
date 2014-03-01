@@ -22,6 +22,7 @@ myvimrc
 * [UltiSnip](https://github.com/sirver/UltiSnips) - for snippets
 * [SuperTab](https://github.com/ervandew/supertab) - for easier autocompletion
 * [Airline](https://github.com/bling/vim-airline) - fancy status line
+* [Bufkill](https://github.com/blueyed/bufkill.vim) - Deleting buffers without closing window
 * vifm vim files
 
 # Other stuff
