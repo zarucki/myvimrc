@@ -5,6 +5,9 @@ set nocompatible
 "source $VIMRUNTIME/vimrc_example.vim
 "source $VIMRUNTIME/mswin.vim
 
+let mapleader=","
+noremap \ ,
+
 " start maximized
 if has("gui_running")
   " GUI is running or is about to start.
@@ -54,9 +57,10 @@ set showbreak=…
 " to show partial line even if they don't fit on screen
 set display+=lastline
 " so jkhl acts on logical lines
-map j gj
-map k gk
-
+nnoremap j gj
+nnoremap gj j
+nnoremap k gk
+nnoremap gk k
 
 " make tab inserts instead of tabs at the begining of a line:
 set smartindent
@@ -90,7 +94,7 @@ inoremap <C-F> <C-R>"
 nnoremap <C-tab> :b #<CR>
 nmap Y y$
 
-nmap ,p o<ESC>p
+nmap <Leader>p o<ESC>p
 
 nnoremap R "_d
 vnoremap R "_d
@@ -170,9 +174,9 @@ set undofile
 set backupdir-=.
 set undodir-=.
 set directory-=.
-set undodir^=$TEMP
-set backupdir^=$TEMP
-set directory^=$TEMP
+set undodir^=$TEMP//
+set backupdir^=$TEMP//
+set directory^=$TEMP//
 
 " Because it's local dummy, why should it behave like some remote terminal
 set ttyfast
@@ -187,9 +191,6 @@ set clipboard+=unnamed
 nnoremap <expr> gp '`[' . getregtype()[0] . '`]'
 nmap Y y$
 
-" Enter working just as in insert in normal
-nnoremap ,<CR> a<CR><Esc>
-nnoremap ,<S-CR> i<CR><Esc>
 " Horizontaly center on cursor
 nnoremap z<Bslash> zszH
 
@@ -223,12 +224,12 @@ cnoremap <C-n> <Down>
 
 runtime macros/matchit.vim
 
-nnoremap ,u :GundoToggle<CR>
-nmap <silent> ,n :silent :nohlsearch<CR>
+nnoremap <Leader>u :GundoToggle<CR>
+nmap <silent> <Leader>n :silent :nohlsearch<CR>
 
 " CtrlP plugin
 let g:ctrlp_working_path_mode = 'ra'
-nmap ,b :CtrlPBuffer<CR>
+nmap <Leader>b :CtrlPBuffer<CR>
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
