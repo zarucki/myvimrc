@@ -67,9 +67,6 @@
 [submodule "vimfiles/bundle/vim-airline"]
 	path = vimfiles/bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
-[submodule "vimfiles/bundle/bufkill"]
-	path = vimfiles/bundle/bufkill
-	url = https://github.com/blueyed/bufkill.vim
 [submodule "vimfiles/bundle/vim-exchange"]
 	path = vimfiles/bundle/vim-exchange
 	url = https://github.com/tommcdo/vim-exchange.git
