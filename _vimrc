@@ -10,18 +10,22 @@ noremap \ ,
 
 " start maximized
 if has("gui_running")
-  " GUI is running or is about to start.
-  " Maximize gvim window.
-  au GUIEnter * simalt ~x " x on an English Windows version. n on a French one
-  set guioptions-=mT
+    if has("win32")
+        " GUI is running or is about to start.
+        " Maximize gvim window.
+        au GUIEnter * simalt ~x " x on an English Windows version. n on a French one
+    endif
+
+    set guioptions-=mT
 else
-  " This is console Vim.
-  if exists("+lines")
-    set lines=50
-  endif
-  if exists("+columns")
-    set columns=100
-  endif
+    " This is console Vim.
+    if exists("+lines")
+        set lines=50
+    endif
+
+    if exists("+columns")
+        set columns=100
+    endif
 endif
 
 "colorscheme github
@@ -77,7 +81,8 @@ syntax enable
 set grepprg=grep\ -n
 
 " Font
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h13:cDEFAULT
+" set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h13:cDEFAULT
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 13
 
 
 "set fencs=ucs-bom,utf-16le,utf-8,default,latin1
