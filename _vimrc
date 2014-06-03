@@ -179,9 +179,6 @@ set undofile
 set backupdir-=.
 set undodir-=.
 set directory-=.
-set undodir^=$TEMP//
-set backupdir^=$TEMP//
-set directory^=$TEMP//
 
 " Because it's local dummy, why should it behave like some remote terminal
 set ttyfast
@@ -189,8 +186,6 @@ set laststatus=1
 
 set wildmenu
 set wildmode=list:full
-
-set clipboard+=unnamed
 
 " Mark just pasted text
 nnoremap <expr> gp '`[' . getregtype()[0] . '`]'
@@ -276,3 +271,16 @@ set laststatus=2
 let g:airline_powerline_fonts = 1
 " because fugitive is not working -_-
 let g:airline_section_b = ''
+
+if has("win32")
+    set clipboard+=unnamed
+    set undodir^=$TEMP//
+    set backupdir^=$TEMP//
+    set directory^=$TEMP//
+else
+    cmap w!! w !sudo tee > /dev/null %
+    set clipboard=unnamedplus
+    set undodir^=~/.vim/vimfiles/undofiles//
+    set backupdir^=~/.vim/vimfiles/backupfiles//
+    set directory^=~/.vim/vimfiles/swapfiles//
+endif
