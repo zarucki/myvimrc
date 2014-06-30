@@ -172,6 +172,8 @@ set autoindent
 set cursorline
 " Relative line numbers
 set relativenumber
+" Since vim 7.4 you can have both turned on
+set number
 
 " Create undo files, so undo data is not lost when file is exited
 set undofile
