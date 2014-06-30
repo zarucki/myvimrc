@@ -23,6 +23,7 @@ myvimrc
 * [Airline](https://github.com/bling/vim-airline) - fancy status line
 * [Vim-Exchange](https://github.com/tommcdo/vim-exchange) - Operator to exchange 2 texts
 * [EasyMotion](https://github.com/Lokaltog/vim-easymotion) - For precise movements
+* [Fontsize][https://github.com/drmikehenry/vim-fontsize] - For increasing and decreasing font on the fly
 * vifm vim files
 
 # Other stuff

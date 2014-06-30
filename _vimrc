@@ -286,3 +286,7 @@ else
     set backupdir^=~/.vim/vimfiles/backupfiles//
     set directory^=~/.vim/vimfiles/swapfiles//
 endif
+
+" For vim-fontsize
+set timeoutlen=3000
+nmap <silent> <Leader>=  <Plug>FontsizeBegin
