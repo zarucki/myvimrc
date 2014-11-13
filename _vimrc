@@ -107,6 +107,10 @@ vnoremap R "_d
 nnoremap \ll :!start cmd "pdflatex %"<CR>
 nnoremap \lv :silent !%:r.pdf<CR>
 
+" execute last substitute
+nnoremap & :&&<CR>
+xnoremap & :&&<CR>
+
 " Shortcuts
 " Change Working Directory to that of the current file
 cmap cwd lcd %:p:h
