@@ -234,13 +234,17 @@ nnoremap <Leader>u :GundoToggle<CR>
 nmap <silent> <Leader>n :silent :nohlsearch<CR>
 
 " CtrlP plugin
+let g:ctrlp_by_filename = 1
 let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_max_files = 0
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard']
 nmap <Leader>b :CtrlPBuffer<CR>
-set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+nmap <Leader>f :CtrlP<CR>
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'dir':  '\v[\/](\.(git|hg|svn)|target|node_modules)$',
+  \ 'file': '\v\.(exe|so|dll|class)$',
   \ }
+" set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
 
 " dbext
 let g:dbext_default_profile_mySQLServer = 'type=SQLSRV:integratedlogin=1:host=localhost'
