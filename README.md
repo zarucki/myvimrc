@@ -24,6 +24,7 @@ myvimrc
 * [Vim-Exchange](https://github.com/tommcdo/vim-exchange) - Operator to exchange 2 texts
 * [EasyMotion](https://github.com/Lokaltog/vim-easymotion) - For precise movements
 * [Fontsize](https://github.com/drmikehenry/vim-fontsize) - For increasing and decreasing font on the fly
+* [vim-gitgutter](https://github.com/airblade/vim-gitgutter) - For git line status
 * vifm vim files
 
 # Other stuff

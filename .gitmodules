@@ -76,3 +76,6 @@
 [submodule "vimfiles/bundle/vim-fontsize"]
 	path = vimfiles/bundle/vim-fontsize
 	url = https://github.com/drmikehenry/vim-fontsize.git
+[submodule "vimfiles/bundle/vim-gitgutter"]
+	path = vimfiles/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
